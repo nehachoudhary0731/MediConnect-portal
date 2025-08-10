@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Create Blog Post{% endblock %}
+
+{% block content %}
+<h2>Create New Blog Post</h2>
+<form method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.title.label }}<br>
+        {{ form.title(size=100) }}
+    </div>
+    <div>
+        {{ form.image.label }}<br>
+        {{ form.image() }}
+    </div>
+    <div>
+        {{ form.category.label }}<br>
+        {{ form.category() }}
+    </div>
+    <div>
+        {{ form.summary.label }}<br>
+        {{ form.summary(rows=4, cols=50) }}
+    </div>
+    <div>
+        {{ form.content.label }}<br>
+        {{ form.content(rows=10, cols=50) }}
+    </div>
+    <div>
+        {{ form.is_draft() }}
+        {{ form.is_draft.label }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
+{% endblock %}

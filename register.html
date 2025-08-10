@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Register</h2>
+<form method="POST" action="{{ url_for('register') }}" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.role.label }}<br>
+        {{ form.role() }}
+    </div>
+    <div>
+        {{ form.first_name.label }}<br>
+        {{ form.first_name(size=32) }}
+    </div>
+    <div>
+        {{ form.last_name.label }}<br>
+        {{ form.last_name(size=32) }}
+    </div>
+    <div>
+        {{ form.username.label }}<br>
+        {{ form.username(size=32) }}
+    </div>
+    <div>
+        {{ form.email.label }}<br>
+        {{ form.email(size=32) }}
+    </div>
+    <div>
+        {{ form.password.label }}<br>
+        {{ form.password(size=32) }}
+    </div>
+    <div>
+        {{ form.confirm_password.label }}<br>
+        {{ form.confirm_password(size=32) }}
+    </div>
+    <div>
+        {{ form.address_line1.label }}<br>
+        {{ form.address_line1(size=32) }}
+    </div>
+    <div>
+        {{ form.city.label }}<br>
+        {{ form.city(size=32) }}
+    </div>
+    <div>
+        {{ form.state.label }}<br>
+        {{ form.state(size=32) }}
+    </div>
+    <div>
+        {{ form.pincode.label }}<br>
+        {{ form.pincode(size=32) }}
+    </div>
+    <div>
+        {{ form.profile_picture.label }}<br>
+        {{ form.profile_picture() }}
+    </div>
+    <div>
+        {{ form.submit() }}
+    </div>
+</form>
+<p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+{% endblock %}
