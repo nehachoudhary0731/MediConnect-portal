@@ -15,9 +15,8 @@ Supports authentication, authorization, and a responsive UI.
 - Responsive and clean design
 
 # Tech Stack
-- *Backend:* Flask (Python)
+- *Backend:* Python, flask 
 - *Database:* MYSQL
-- *Frontend:* HTML, CSS (Jinja Templates)
+- *Frontend:* HTML, CSS 
 - *Forms:* Flask-WTF
 - *Authentication:* Flask-Login
-- *Password Security:* Werkzeug (Password Hashing)
