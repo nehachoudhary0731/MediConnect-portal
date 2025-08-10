@@ -9,9 +9,9 @@ Supports authentication, authorization, and a responsive UI.
 # Features
 - User Registration & Login
 - Password Hashing for Security
-- Create, Edit, and Delete Blog Posts
+- Create, Edit, draft and Delete Blog Posts
 - View Posts from All Users
-- User-specific Access Control (Only post owners can edit/delete)
+- User-specific Access Control (Only post owners(doctors)can edit/delete and see draft )
 - Responsive and clean design
 
 # Tech Stack
