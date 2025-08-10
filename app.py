@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', '1234abcd')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'hvsusgdsd34567sdfghb')
 
 # Database configuration
 db_user = os.getenv('DB_USER', 'root')
@@ -320,4 +320,5 @@ if __name__ == '__main__':
     print("Starting Medical Portal Application...")
     print(f"Using database: {app.config['SQLALCHEMY_DATABASE_URI']}")
     initialize_database()
+
     app.run(debug=True)
